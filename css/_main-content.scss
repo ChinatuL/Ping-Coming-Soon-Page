@@ -1,0 +1,100 @@
+.main {
+    width: 100%;
+
+    .container {
+        @include flex(column);
+        width: 50%;
+        margin: 0 25%;
+
+        .text-section {
+            @include flex(column);
+
+            &-heading {
+                padding-bottom: 0.8rem;
+                font-weight: getWeight(light);
+
+                .bold {
+                    font-weight: getWeight(bold);
+                    color: $very-dark-blue;
+                }
+            }
+
+            &-description {
+                padding-bottom: 1rem;
+                color: $very-dark-blue;
+                font-weight: getWeight(semiBold);
+            }
+        }
+
+        .form {
+            margin-bottom: 3rem;
+            width: 100%;
+
+            & > div {
+                @include flex(row);
+                width: 100%;
+            }
+
+            &-input {
+                border: 1px solid $pale-blue;
+                border-radius: 1.5rem;
+                margin-right: 0.5rem;
+                width: 50%;
+                padding: 0.8rem 1rem;
+                color: $very-dark-blue;
+                font-weight: getWeight(semiBold);
+
+                &::placeholder {
+                    color: $pale-blue;
+                    font-family: $font-family;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                .invalid {
+                    border: 1px solid $light-red;
+                }
+
+                &:-webkit-autofill,
+                &:-webkit-autofill:hover,
+                &:-webkit-autofill:focus,
+                &:-webkit-autofill:active {
+                    transition: background-color 9999s ease-in-out 0s;
+                }
+            }
+
+            &-btn {
+                @include transition;
+                border: none;
+                border-radius: 1.5rem;
+                box-shadow: 2px 1px 5px 3px $pale-blue;
+                padding: 0.8rem 2.5rem;
+                background-color: $blue;
+                cursor: pointer;
+                color: white;
+                font-family: $font-family;
+
+                &:hover {
+                    opacity: 80%;
+                }
+            }
+
+            &-error {
+                display: none;
+                width: 70%;
+                margin: 0.2rem auto;
+                color: $light-red;
+            }
+        }
+
+        .illustration {
+            width: 80%;
+
+            &-img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.footer {
+    @include flex(column);
+    margin-top: 3rem;
+
+    &-links {
+        @include flex(row);
+        margin-bottom: 2rem;
+
+        &-link {
+            margin-right: 1rem;
+
+            a {
+                color: transparent;
+                padding: 0.5rem 0.6rem;
+                color: $blue;
+
+                &:hover {
+                    border-radius: 50%;
+                    background: $blue;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &-copyright {
+        margin-bottom: 2rem;
+        font-size: 0.7rem;
+    }
+}

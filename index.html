@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frontend Mentor | Ping coming soon page</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/252caf6e4e.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-img">
+                <img src="./images/logo.svg" alt="Ping" />
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="text-section">
+                    <h1 class="text-section-heading">
+                        We are launching <span class="bold">soon!</span>
+                    </h1>
+                    <p class="text-section-description">
+                        Subscribe and get notified
+                    </p>
+                </div>
+                <form
+                    action="#"
+                    name="Subcription-Form"
+                    class="form"
+                    novalidate
+                >
+                    <div>
+                        <input
+                            type="email"
+                            name="email"
+                            class="form-input"
+                            placeholder="Your email address"
+                            aria-label="Your email address"
+                            aria-required="true"
+                            aria-invalid="false"
+                            aria-describedby="email-error"
+                        />
+                        <button type="submit" class="form-btn">
+                            Notify Me
+                        </button>
+                    </div>
+                    <p id="email-error" role="alert" class="form-error">
+                        Please provide a valid email address
+                    </p>
+                </form>
+                <div class="illustration">
+                    <img
+                        src="./images/illustration-dashboard.png"
+                        alt=""
+                        class="illustration-img"
+                    />
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-links">
+                <div class="footer-links-link">
+                    <a href="#" aria-label="Our facebook page">
+                        <i
+                            class="fa-brands fa-facebook-f"
+                            title="Our facebook page"
+                        ></i>
+                    </a>
+                </div>
+                <div class="footer-links-link">
+                    <a href="#" aria-label="Our twitter handle">
+                        <i
+                            class="fa-brands fa-twitter"
+                            title="Our twitter handle"
+                        ></i>
+                    </a>
+                </div>
+                <div class="footer-links-link">
+                    <a href="#" aria-label="Our instagram handle">
+                        <i
+                            class="fa-brands fa-instagram"
+                            title="Our instagram handle"
+                        ></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer-copyright">
+                &copy; Copyright Ping. All rights reserved
+            </p>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

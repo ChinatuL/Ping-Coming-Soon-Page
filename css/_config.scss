@@ -1,0 +1,35 @@
+$blue: hsl(223, 87%, 63%);
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+$font-family: "Libre Franklin", sans-serif;
+$font-size: 20px;
+$weights: (
+    "light": 300,
+    "semiBold": 400,
+    "bold": 600,
+);
+
+@function getWeight($weights-name) {
+    @return map-get($weights, $weights-name);
+}
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: all 0.3s ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}

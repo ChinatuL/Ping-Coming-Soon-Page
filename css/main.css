@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 2.5rem;
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+}
+.main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 25%;
+}
+.main .container .text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .container .text-section-heading {
+  padding-bottom: 0.8rem;
+  font-weight: 300;
+}
+.main .container .text-section-heading .bold {
+  font-weight: 600;
+  color: hsl(209, 33%, 12%);
+}
+.main .container .text-section-description {
+  padding-bottom: 1rem;
+  color: hsl(209, 33%, 12%);
+  font-weight: 400;
+}
+.main .container .form {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+.main .container .form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main .container .form-input {
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 1.5rem;
+  margin-right: 0.5rem;
+  width: 50%;
+  padding: 0.8rem 1rem;
+  color: hsl(209, 33%, 12%);
+  font-weight: 400;
+}
+.main .container .form-input::-moz-placeholder {
+  color: hsl(223, 100%, 88%);
+  font-family: "Libre Franklin", sans-serif;
+}
+.main .container .form-input::placeholder {
+  color: hsl(223, 100%, 88%);
+  font-family: "Libre Franklin", sans-serif;
+}
+.main .container .form-input:focus {
+  outline: none;
+}
+.main .container .form-input .invalid {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+.main .container .form-input:-webkit-autofill, .main .container .form-input:-webkit-autofill:hover, .main .container .form-input:-webkit-autofill:focus, .main .container .form-input:-webkit-autofill:active {
+  -webkit-transition: background-color 9999s ease-in-out 0s;
+  transition: background-color 9999s ease-in-out 0s;
+}
+.main .container .form-btn {
+  transition: all 0.3s ease-in-out;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 2px 1px 5px 3px hsl(223, 100%, 88%);
+  padding: 0.8rem 2.5rem;
+  background-color: hsl(223, 87%, 63%);
+  cursor: pointer;
+  color: white;
+  font-family: "Libre Franklin", sans-serif;
+}
+.main .container .form-btn:hover {
+  opacity: 80%;
+}
+.main .container .form-error {
+  display: none;
+  width: 70%;
+  margin: 0.2rem auto;
+  color: hsl(354, 100%, 66%);
+}
+.main .container .illustration {
+  width: 80%;
+}
+.main .container .illustration-img {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.footer-links-link {
+  margin-right: 1rem;
+}
+.footer-links-link a {
+  color: transparent;
+  padding: 0.5rem 0.6rem;
+  color: hsl(223, 87%, 63%);
+}
+.footer-links-link a:hover {
+  border-radius: 50%;
+  background: hsl(223, 87%, 63%);
+  color: white;
+}
+.footer-copyright {
+  margin-bottom: 2rem;
+  font-size: 0.7rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  color: hsl(0, 0%, 59%);
+  font-family: "Libre Franklin", sans-serif;
+  overflow-x: hidden;
+}/*# sourceMappingURL=main.css.map */
