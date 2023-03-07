@@ -26,6 +26,12 @@ $weights: (
     transition: all 0.3s ease-in-out;
 }
 
+@mixin mediaQuery {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
 *,
 *::before,
 *::after {

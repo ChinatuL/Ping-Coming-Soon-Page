@@ -8,11 +8,20 @@
 
         &-link {
             margin-right: 1rem;
-
             a {
+                border: 1px solid $pale-blue;
+                border-radius: 50%;
                 color: transparent;
                 padding: 0.5rem 0.6rem;
                 color: $blue;
+
+                .fa-facebook-f {
+                    padding: 0 0.2rem;
+                }
+
+                .fa-instagram {
+                    padding: 0 0.1rem;
+                }
 
                 &:hover {
                     border-radius: 50%;
